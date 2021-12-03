@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="center-on-page">
+        {% for d in data %}
+            <h1>Stock Price</h1>
+            <p>{{ d["Monthly Time Series"] }}</p>
+        {% endfor %}
+    </div>
+{% endblock %}
